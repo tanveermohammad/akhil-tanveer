@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <georedirect>
+            <general>
+                <enable>0</enable>
+                <domain_where_popup_works>https://mcstaging.mikimoto.com</domain_where_popup_works>
+                <country_redirect_url_default>https://mcstaging.mikimoto.com/jp_jp</country_redirect_url_default>
+                <country_redirect_name>Japan</country_redirect_name>
+                <api_url>https://api.docodoco.jp/v5/search?</api_url>
+                <API1>VcPuTPaqASGmksrG4wn11pfZckRMIco8KJzcodFqKf9M4lpX37dlN5DeMW6yAf97</API1>
+                <API2>29f8f416d40b201bd4ca0a0e29ba7315827ebebe</API2>
+                <api_format>json</api_format>
+                <api_ipadr></api_ipadr>
+                <welcome_message>Welcome to Mikimoto</welcome_message>
+                <continue_btn>Go To Mikimoto</continue_btn>
+                <stay_button>Stay On Mikimoto</stay_button>
+                <message_if_available>shopping from </message_if_available>
+                <message_if_not_available> Sorry We are Not available in your country </message_if_not_available>
+            </general>
+        </georedirect>
+    </default>
+</config>

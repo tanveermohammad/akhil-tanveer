@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * popup location 
+ *
+ *
+ * declare here in which layout on frontend you want the popup
+ *
+ * @author Tanveer Mohammad <tanveer.mohammad@pennywisesolutions.com>
+ * @package Mikimoto\GeoRedirect
+ * @since 1.0 First time this was introduced.
+ * @copyright 1948-2019 Ogilvy
+ *  
+ */
+
+ -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="footer-container">
+             <block class="Mikimoto\GeoRedirect\Block\PopupStatus" name="popup" as="popup" template="Mikimoto_GeoRedirect::popup.phtml" after="-">
+                    <block class="Magento\Cms\Block\Block" name="popup-content">
+                        <arguments>
+                            <argument name="block_id" xsi:type="string">popup-content</argument>
+                        </arguments>
+                    </block>
+                </block>
+          
+        </referenceContainer>
+    </body>
+</page>

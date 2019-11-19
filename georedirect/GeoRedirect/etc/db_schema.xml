@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * This is a declarative schema to create table
+ *
+ *
+ * the database table geo_redirect is created by this schema. to make changes to table 
+ * changes can be made from here
+ *
+ *  * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ * 
+ */
+
+ -->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+	<table name="geo_redirect" resource="default" comment="Create table using declarative schema">
+        
+        <column xsi:type="varchar" name="country_id" length="25"  nullable="false" comment="Entity Id"/>
+		<column xsi:type="varchar" name="country_code" nullable="false" length="255" comment="code"/>
+		<column xsi:type="varchar" name="country_destination_url" nullable="false" length="255" comment="code"/>
+					
+	</table>
+</schema>

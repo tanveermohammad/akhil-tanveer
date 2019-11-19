@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="georedirect" translate="label" sortOrder="10000">
+            <label>Geo Redirect</label>
+        </tab>
+        <section id="georedirect" translate="label" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+             <class>separator-top</class>
+            <label>Geo Redirect</label>
+            <tab>georedirect</tab>
+         		<resource>Mikimoto_GeoRedirect::georedirect_config</resource>
+            <group id="general" translate="label" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+               <label>Geo Redirect Configuration</label>
+                  <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Module Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="domain_where_popup_works" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Default Domain Url where popup shall work</label>
+                    <comment>please follow the syntax for Ex: https://www.mikimoto.com</comment>
+                </field> 
+               <field id="country_redirect_url_default" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Default Redirection Url</label>
+                    <comment>please follow the syntax for Ex: https://www.mikimoto.com/jp_jp</comment>
+                </field> 
+                <field id="country_redirect_name" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Default Redirection Country name</label>
+                    <comment>for Ex: Japan</comment>
+                </field>
+                <field id="api_url" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Api Url</label>
+                    <comment>For Ex: https://api.docodoco.jp/v5/search?</comment>
+                </field>
+                <field id="API1" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>API1 key</label>
+                    <comment>please add the api 1 key here for ex: VcPuTPaqASGmksrG4wn11pfZckRMIco8KJzcodFqKf9M4lpX37dlN5DeMW6yAf97</comment>
+                </field>
+                <field id="API2" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>API2 key</label>
+                    <comment>please add the api 2 key here for ex: 29f8f416d40b201bd4ca0a0e29ba7315827ebebe</comment>
+                </field>
+                <field id="api_format" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Api Format</label>
+                    <comment>please do not make any changes to this field leave it always as for ex: json </comment>
+                </field>
+                  <field id="api_ipadr" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>ipadr url parameter</label>
+                    <comment>this will always be empty </comment>
+                </field>
+                <field id="welcome_message" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Popup welcome message heading</label>
+                    <comment>please enter a popup welcome message for ex: Welcome to Mikimoto</comment>
+                </field>
+                <field id="continue_btn" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Continue Button name</label>
+                    <comment>this text will be displayed on popup continue button for Ex: "Go To Mikimoto", note: check your results on the website after changes made</comment>
+                </field>
+                
+                <field id="stay_button" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Stay Button</label>
+                    <comment>this text will be displayed on popup continue button for Ex: "Stay On Mikimoto" , note: check your results on the website after changes made</comment>
+                </field>
+                <field id="message_if_available" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Popup Message When Store Available</label>
+                    <comment>For Ex: "shopping from "  note: check your results on the website after changes made</comment>
+                </field>
+                <field id="message_if_not_available" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Popup Message When Store not Available</label>
+                    <comment>For Ex: " Sorry We are Not available in your country "  note: check your results on the website after changes made</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

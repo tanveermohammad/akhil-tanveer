@@ -1,0 +1,44 @@
+<?php
+/**
+ * popup widget
+ * call the popup here
+ *
+ * @author    Tanveer Mohammad <tanveer.mohammad@pennywisesolutions.com>
+ * @package   Mikimoto\GeoRedirect
+ * @since     1.0 First time this was introduced.
+ * @copyright 1948-2019 Ogilvy
+ */
+?>
+
+<div class="note"> 
+   <a class="action popup-open" href="#"> 
+       <span><?php //echo __('Please, click to open popup') ?></span> 
+   </a> 
+   <input type="hidden" value="<?php echo $this->getUrl(); ?>" id="baseUrl"/>
+   <input type="hidden" value="<?php echo $block->getPopupStatus();?>" id="popupstatus"/>
+   
+   <input type="hidden" value="<?php echo $block->getPopupDefaultdomain();?>" id="popupdefaultdomain"/>
+   <input type="hidden" value="<?php echo $block->getDomainWherePopupworks();?>" id="domain_where_popup_works"/>
+   
+   
+</div> 
+<?php //echo $block->getChildHtml('popup') ?> 
+
+<script type="text/x-magento-init"> 
+{ 
+   ".popup-open": { 
+       "Mikimoto_GeoRedirect/js/popup": { "components": {
+                "Georedirect": {
+                    "dataUrl": "<?php echo $block->getBaseUrl(); ?>"
+                }
+            }}
+ } 
+} 
+</script>
+<div class="mikimoto-popup-geo" id="mikimoto-popup-geo-main"  style="display:none">
+  <div class="container">
+       <div class="mikimoto-popup-geo-con" id="mikimoto-popup-geo"  style="display:none">
+    <?php echo  $block->getChildHtml('popup-content') ?>
+   </div>
+</div>  
+</div>

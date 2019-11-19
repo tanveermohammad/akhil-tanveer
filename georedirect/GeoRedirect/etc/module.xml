@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * declare module
+ *
+ *
+ * GeoRedirect module is declared here
+ *
+ * @author Tanveer Mohammad <tanveer.mohammad@pennywisesolutions.com>
+ * @package Mikimoto\GeoRedirect
+ * @since 1.0 First time this was introduced.
+ * @copyright 1948-2019 Ogilvy
+ * 
+ */
+
+ -->
+ <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Mikimoto_GeoRedirect" setup_version="1.1.0">
+    </module>
+</config>
+

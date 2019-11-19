@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * This is a router
+ * to access the webservice on the front end  the front name for the webservice is declared here
+ *
+ *
+ *  * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ * 
+ */
+
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route frontName="georedirect" id="georedirect">
+            <module name="Mikimoto_GeoRedirect"/>
+        </route>
+    </router>
+</config>
